@@ -1,0 +1,32 @@
+# 1. Thư mục và file hệ thống không cần thiết
+.idea/                 # JetBrains IDEs (PhpStorm, WebStorm)
+.vscode/               # VS Code settings
+node_modules/          # Nếu có sử dụng Node.js
+vendor/                # Composer packages (có thể cài lại)
+
+# 2. Các file hệ thống của PHP/XAMPP
+*.log                  # Log files
+*.cache                # Cache files
+*.bak                  # Backup files
+
+# 3. File nhạy cảm và thông tin cấu hình cá nhân
+.env                   # Biến môi trường (database credentials, API keys)
+*.env                  # Bảo đảm tất cả file .env bị ignore
+config.php             # Nếu có chứa thông tin kết nối database
+
+# 4. Database và các file dump
+*.sql                  # File backup database
+*.sqlite               # File database SQLite
+storage/               # Nếu Laravel hoặc có thư mục lưu trữ dữ liệu
+
+# 5. Thư mục public/upload hoặc lưu ảnh người dùng
+public/uploads/        # Nếu có file ảnh user upload
+
+# 6. Các file hệ thống của macOS & Windows
+.DS_Store              # File hệ thống Mac
+Thumbs.db              # File hệ thống Windows
+
+# 7. Composer & XAMPP-specific files
+composer.lock          # Composer lock file
+xampp/                 # Nếu có sử dụng XAMPP
+htdocs/                # Nếu dự án nằm trong htdocs của XAMPP
